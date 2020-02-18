@@ -7,7 +7,7 @@ FROM biohaz/basic_ubuntu
 WORKDIR /home
 
 RUN apt-get update -y \
-	&& wget https://www.smallrnagroup.uni-mainz.de/software/unitas_1.7.5.zip \
+	&& wget https://www.smallrnagroup.uni-mainz.de/software/unitas_1.7.5.zip\
 	&& unzip unitas_1.7.5.zip \
 	&& rm unitas_1.7.5.zip \
   && echo y | cpan Archive::Extract LWP::Simple
